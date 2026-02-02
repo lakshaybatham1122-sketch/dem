@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('black.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .nav {
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            width: 50vw;
+            height: 70vh;
+            backdrop-filter: blur(7px);
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px gainsboro;
+        }
+
+        h1 {
+            text-align: center;
+            color: aliceblue;
+            font-size: 60px;
+            text-shadow: 0px 0px 10px beige;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .name {
+            background-color: darkgrey;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+            top: -10px;
+            width: 40%;
+            height: 14%;
+            font-size: 15px;
+            text-shadow: 0px 0px 1px black;
+        }
+
+        .name1 {
+            margin-left: 11%;
+        }
+
+        .name3 {
+            margin-left: 11%;
+        }
+
+        .text {
+            position: absolute;
+            left: 35%;
+            width: 40%;
+            height: 40%;
+            font-size: 40px;
+            color: whitesmoke;
+            text-shadow: 0px 0px 10px lightskyblue;
+        }
+
+        .text1 {
+            top: 30%;
+        }
+
+        .text2 {
+            top: 40%;
+        }
+
+        .text3 {
+            top: 50%;
+        }
+
+        .btn {
+            background-color: black;
+            border: 2px solid black;
+            position: absolute;
+            top: 70%;
+            left: 45%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 0px 5px antiquewhite;
+            color: whitesmoke;
+        }
+
+        .btn::before {
+            content: "";
+            background-color: greenyellow;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: -100px;
+            transition-duration: 1s;
+            transition-property: left, top;
+
+        }
+
+        .btn:hover::before {
+            left: 0px;
+        }
+
+        .btn .text4 {
+            font-size: 20px;
+            color: lightskyblue;
+            padding: 10px 20px;
+            text-shadow: 0px 0px 3px wheat;
+            font-weight: bold;
+
+        }
+
+        .st {
+            position: relative;
+            top: 6px;
+            left: 15px;
+        }
+
+        .search {
+            width: 5%;
+            height: 5%;
+            position: absolute;
+            left: 47%;
+            top: 16px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body><ion-icon class="search" name="search-circle"></ion-icon>
+    <div class="nav">
+
+        <h1>Login Here</h1>
+        <form>
+            <p class="text1 text">Name: <input class="name1 name" type="text" name="t1" placeholder="Enter Name"
+                    required /><ion-icon class="st1 st" name="pencil"></ion-icon>
+            </p>
+            <p class="text2 text">Password: <input class="name2 name" type="password" name="t2"
+                    placeholder="Enter Password" required /><ion-icon class="st2 st" name="key"></ion-icon></p>
+            <p class="text3 text">Email: <input class="name3 name" type="email" name="t3" placeholder="Enter E-mail"
+                    required /><ion-icon class="st3 st" name="mail"></ion-icon></p>
+            <button class="btn" type="submit">
+                <p class="text4">Login</p>
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
